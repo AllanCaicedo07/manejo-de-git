@@ -3,8 +3,7 @@ import java.util.Scanner;
 /**
  * Calculadora Básica en Java
  * Programa que utiliza estructuras de control para realizar operaciones matemáticas básicas
- * @author Claude
- * @version 1.0
+ * 
  */
 public class CalculadoraBasica {
     
@@ -34,7 +33,7 @@ public class CalculadoraBasica {
                 
                 // Si elige salir
                 if (opcion == 5) {
-                    System.out.println("\n✓ ¡Gracias por usar la calculadora! Hasta pronto.");
+                    System.out.println("\n ¡Gracias por usar la calculadora! Hasta pronto.");
                     continuar = false;
                     continue;
                 }
@@ -54,27 +53,27 @@ public class CalculadoraBasica {
                 switch (opcion) {
                     case 1:
                         resultado = sumar(numero1, numero2);
-                        System.out.println("\n✓ Resultado: " + numero1 + " + " + numero2 + " = " + resultado);
+                        System.out.println("\n Resultado: " + numero1 + " + " + numero2 + " = " + resultado);
                         break;
                         
                     case 2:
                         resultado = restar(numero1, numero2);
-                        System.out.println("\n✓ Resultado: " + numero1 + " - " + numero2 + " = " + resultado);
+                        System.out.println("\n Resultado: " + numero1 + " - " + numero2 + " = " + resultado);
                         break;
                         
                     case 3:
                         resultado = multiplicar(numero1, numero2);
-                        System.out.println("\n✓ Resultado: " + numero1 + " × " + numero2 + " = " + resultado);
+                        System.out.println("\n Resultado: " + numero1 + " × " + numero2 + " = " + resultado);
                         break;
                         
                     case 4:
                         // Validación especial para la división
                         if (numero2 == 0) {
-                            System.out.println("\n✗ Error: No se puede dividir entre cero.");
+                            System.out.println("\n Error: No se puede dividir entre cero.");
                             operacionValida = false;
                         } else {
                             resultado = dividir(numero1, numero2);
-                            System.out.println("\n✓ Resultado: " + numero1 + " ÷ " + numero2 + " = " + resultado);
+                            System.out.println("\n Resultado: " + numero1 + " ÷ " + numero2 + " = " + resultado);
                         }
                         break;
                         
@@ -89,7 +88,7 @@ public class CalculadoraBasica {
                 }
                 
             } catch (Exception e) {
-                System.out.println("\n✗ Error: Entrada inválida. Por favor, ingrese valores numéricos.");
+                System.out.println("\n Error: Entrada inválida. Por favor, ingrese valores numéricos.");
                 scanner.nextLine(); // Limpiar el buffer
             }
             
@@ -159,18 +158,18 @@ public class CalculadoraBasica {
     public static void mostrarInformacionAdicional(double resultado) {
         // Estructura if-else para determinar propiedades del resultado
         if (resultado > 0) {
-            System.out.println("  → El resultado es positivo");
+            System.out.println("   El resultado es positivo");
         } else if (resultado < 0) {
-            System.out.println("  → El resultado es negativo");
+            System.out.println("   El resultado es negativo");
         } else {
-            System.out.println("  → El resultado es cero");
+            System.out.println("   El resultado es cero");
         }
         
         // Verificar si es entero
         if (resultado == (int) resultado) {
-            System.out.println("  → El resultado es un número entero");
+            System.out.println("   El resultado es un número entero");
         } else {
-            System.out.println("  → El resultado es un número decimal");
+            System.out.println("   El resultado es un número decimal");
         }
     }
 }
