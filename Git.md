@@ -156,7 +156,8 @@ Esto significa que Git no guarda “cambios” como diferencias acumulativas, si
 
 4. ¿Cómo se crea un commit y qué información almacena un objeto commit?
 
-##### R:# Creación de un commit
+##### R: 
+## Creación de un commit
 
 Un commit se crea en tres pasos simples:
 
@@ -221,7 +222,8 @@ Esta estructura hace que Git pueda rastrear completamente la evolución del proy
 ***
 5. ¿Cuál es la diferencia entre git pull y git fetch?
 
-##### R:## Git Fetch
+##### R:
+## Git Fetch
 
 `git fetch` descarga los cambios del repositorio remoto a tu repositorio local, pero **NO** los fusiona automáticamente con tu rama actual. Solo actualiza las referencias remotas.
 
@@ -345,7 +347,8 @@ git pull origin main
 ***
 6. ¿Qué es un branch (rama) en Git y cómo Git gestiona los punteros a commits?
 
-##### R: ## ¿Qué es un branch (rama)?
+#### R: 
+### ¿Qué es un branch (rama)?
 
 Un **branch** o rama en Git es simplemente un **puntero móvil** que apunta a un commit específico. Permite crear líneas de desarrollo independientes sin afectar el código principal del proyecto.
 
@@ -587,7 +590,8 @@ Los punteros en Git hacen que trabajar con ramas sea extremadamente rápido y ef
 ***
 7. ¿Cómo se realiza un merge y qué conflictos pueden surgir? ¿Cómo se resuelven?
 
-##### R: ## ¿Qué es un merge?
+## R: 
+### ¿Qué es un merge?
 
 Un **merge** (fusión) es el proceso de integrar los cambios de una rama en otra. Combina el historial de dos ramas diferentes en una sola.
 
@@ -1012,7 +1016,8 @@ Los conflictos son normales en el trabajo colaborativo. Con práctica, resolverl
 ***
 8. ¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?
 
-##### R: ## ¿Qué es el área de staging?
+### R: 
+## ¿Qué es el área de staging?
 
 El **área de staging** (también llamada "índice" o "staging area") es una zona intermedia entre tu directorio de trabajo y el repositorio Git. Funciona como un "área de preparación" donde seleccionas exactamente qué cambios quieres incluir en tu próximo commit.
 
@@ -1437,7 +1442,9 @@ El área de staging es una característica poderosa de Git que te da control tot
 ***
 9. ¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?
 
-##### R: ## ¿Qué es el archivo .gitignore?
+## R: 
+
+## ¿Qué es el archivo .gitignore?
 
 El archivo **.gitignore** es un archivo de texto especial que le indica a Git qué archivos o directorios **NO** debe rastrear ni incluir en el control de versiones. Funciona como una "lista negra" de archivos que Git debe ignorar completamente.
 
@@ -2012,7 +2019,7 @@ El archivo .gitignore es fundamental para mantener tu repositorio limpio, seguro
 ***
 10. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?
 
-##### R: 
+### R: 
 ## ¿Qué es git commit --amend?
 
 `git commit --amend` es un comando que te permite **modificar el último commit** realizado. En lugar de crear un nuevo commit, reescribe el commit anterior, permitiéndote agregar cambios olvidados o corregir el mensaje del commit.
